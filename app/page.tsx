@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Navbar />
       <main className="bg-marketing-black-bg">
-        <div className="container mx-auto max-w-7xl p-6 lg:p-0">
+        <div className="container mx-auto max-w-7xl p-10 md:p-6 lg:p-0">
           {/* hero section */}
           <Hero />
           {/* service section */}

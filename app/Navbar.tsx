@@ -1,14 +1,24 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import Logo from "./components/Logo";
+import Sidebar from "./components/Sidebar";
 
 const Navbar = () => {
   return (
     <nav className="h-16 bg-marketing-black-bg">
-      <div className="container mx-auto max-w-7xl h-full relative">
-        <header className="flex items-center justify-center h-full">
+      <div className="container mx-auto max-w-7xl h-full px-4">
+        <header className="flex items-center justify-between h-full">
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <Link href="/">
+              <Logo />
+            </Link>
+          </div>
+
           {/* Navigation links */}
-          <div className="flex items-center gap-6 text-white uppercase">
+          <div className="hidden md:flex items-center justify-center flex-grow gap-6 text-white uppercase">
             <Link
               href="#"
               className="text-xs hover:text-orange-500 transition-colors"
@@ -46,14 +56,12 @@ const Navbar = () => {
               Contact
             </Link>
           </div>
-        </header>
 
-        {/* Logo */}
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
-          <Link href="/" className="flex-shrink-0">
-            <Logo />
-          </Link>
-        </div>
+          {/* Sidebar for mobile */}
+          <div className="md:hidden">
+            <Sidebar />
+          </div>
+        </header>
       </div>
     </nav>
   );

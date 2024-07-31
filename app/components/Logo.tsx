@@ -3,7 +3,7 @@ import React from "react";
 const Logo = ({ width = "28" }: { width?: string }) => {
   return (
     <svg
-      width="144"
+      width="150"
       height="38"
       className={`${width}`}
       viewBox="0 0 182 67"

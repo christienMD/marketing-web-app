@@ -6,7 +6,7 @@ import ServiceHeading from "./ServiceHeading";
 
 const Services = () => {
   return (
-    <section className="mt-10 pb-10 flex flex-col justify-center items-center gap-12">
+    <section className="mt-20 pb-10 flex flex-col justify-center items-center gap-12">
       <div className="relative h-[370px] w-[255px] md:h-[400px] md:w-[300px]">
         <Image
           alt="services"
@@ -29,7 +29,7 @@ const Services = () => {
           {/* service 1 */}
           <div className="flex flex-col gap-3">
             <ServiceHeading count="01" title="social media strategy" />
-            <p className="text-white text-center md:text-left text-sm md:text-base px-10 md:px-14">
+            <p className="text-white text-center md:text-left text-sm md:text-base px-14 md:px-14">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
               pariatur maxime officiis animi, quia corporis ipsam harum esse
               impedit. Facere! Lorem ipsum dolor sit amet consectetur
@@ -44,7 +44,7 @@ const Services = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="size-9 text-marketing-orange-200"
+                className="size-8 text-marketing-orange-200"
               >
                 <path
                   stroke-linecap="round"
@@ -73,7 +73,7 @@ const Services = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="size-9 text-white"
+                className="size-8 text-white"
               >
                 <path
                   stroke-linecap="round"
@@ -98,8 +98,9 @@ const Services = () => {
         </div>
 
         {/* 2nd service */}
+
         {/* image */}
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full flex items-center justify-center order-2 md:order-1">
           <div className="relative h-[370px] w-[255px] md:h-[400px] md:w-[300px]">
             <Image
               alt="services"
@@ -110,7 +111,7 @@ const Services = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-7 items-center">
+        <div className="flex flex-col gap-7 items-center order-1 md:order-2">
           {/* service 1 */}
           <div className="flex flex-col gap-3">
             <ServiceHeading count="03" title="ui/ux design" />
@@ -129,7 +130,7 @@ const Services = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="size-9 text-marketing-orange-200"
+                className="size-8 text-marketing-orange-200"
               >
                 <path
                   stroke-linecap="round"
@@ -157,7 +158,7 @@ const Services = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="size-9 text-marketing-orange-200"
+                className="size-8 text-marketing-orange-200"
               >
                 <path
                   stroke-linecap="round"
@@ -185,7 +186,7 @@ const Services = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="size-9 text-marketing-orange-200"
+                className="size-8 text-marketing-orange-200"
               >
                 <path
                   stroke-linecap="round"
@@ -196,6 +197,8 @@ const Services = () => {
             </div>
           </div>
         </div>
+
+        
       </div>
     </section>
   );
