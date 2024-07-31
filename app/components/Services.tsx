@@ -1,13 +1,26 @@
+"use client";
+
 import Image from "next/image";
 import imgService from "@/public/images/imgService.png";
 import macBook from "@/public/images/Group 3.png";
 import airPode from "@/public/images/Group 4.png";
 import ServiceHeading from "./ServiceHeading";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <section className="mt-20 pb-10 flex flex-col justify-center items-center gap-12">
-      <div className="relative h-[370px] w-[255px] md:h-[400px] md:w-[300px]">
+    <section className="pb-10 flex flex-col justify-center items-center gap-12">
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{
+          duration: 0.8,
+          ease: "easeOut",
+          delay: 0.2,
+        }}
+        viewport={{ once: true }}
+        className="relative h-[370px] w-[255px] md:h-[400px] md:w-[300px]"
+      >
         <Image
           alt="services"
           src={imgService}
@@ -15,13 +28,25 @@ const Services = () => {
           className="object-cover"
           sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
         />
-        <p className="uppercase text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black absolute top-36 -left-10 md:-left-40">
+        <motion.p
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="uppercase text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black absolute top-36 -left-10 md:-left-40"
+        >
           our
-        </p>
-        <p className="absolute left-32 md:left-40 top-60 text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-marketing-orange-200 font-black mb-4">
+        </motion.p>
+        <motion.p
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          viewport={{ once: true }}
+          className="absolute left-32 md:left-40 top-60 text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-marketing-orange-200 font-black mb-4"
+        >
           services
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
 
       <div className="grid md:grid-cols-2 gap-6">
         {/* 1st service */}
@@ -86,7 +111,13 @@ const Services = () => {
         </div>
         {/* image */}
         <div className="w-full flex items-center justify-center">
-          <div className="relative h-[370px] w-[255px] md:h-[400px] md:w-[300px]">
+          <motion.div
+            initial={{ x: 190, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2 }}
+            viewport={{ once: true }}
+            className="relative h-[370px] w-[255px] md:h-[400px] md:w-[300px]"
+          >
             <Image
               alt="services"
               src={macBook}
@@ -94,14 +125,20 @@ const Services = () => {
               className="object-cover"
               sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
             />
-          </div>
+          </motion.div>
         </div>
 
         {/* 2nd service */}
 
         {/* image */}
         <div className="w-full flex items-center justify-center order-2 md:order-1">
-          <div className="relative h-[370px] w-[255px] md:h-[400px] md:w-[300px]">
+          <motion.div
+            initial={{ x: -190, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.2 }}
+            viewport={{ once: true }}
+            className="relative h-[370px] w-[255px] md:h-[400px] md:w-[300px]"
+          >
             <Image
               alt="services"
               src={airPode}
@@ -109,7 +146,7 @@ const Services = () => {
               className="object-cover"
               sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
             />
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col gap-7 items-center order-1 md:order-2">
           {/* service 1 */}
@@ -197,8 +234,6 @@ const Services = () => {
             </div>
           </div>
         </div>
-
-        
       </div>
     </section>
   );

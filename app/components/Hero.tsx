@@ -2,12 +2,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="pt-14 lg:pt-16 h-full">
-      <div className="flex flex-col gap-20 items-center">
+    <div className="h-[470px]">
+      <div className="flex flex-col gap-20 items-center mt-20">
         <h1 className="text-center text-white">
-          <span
-            className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-marketing-orange-100 font-black mb-4"
-          >
+          <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-marketing-orange-100 font-black mb-4">
             marketing
           </span>
           <div className="inline-block">
