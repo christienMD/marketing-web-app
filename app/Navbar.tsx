@@ -8,40 +8,40 @@ const Navbar = () => {
       <div className="container mx-auto max-w-7xl h-full relative">
         <header className="flex items-center justify-center h-full">
           {/* Navigation links */}
-          <div className="flex items-center gap-4 text-white uppercase">
+          <div className="flex items-center gap-6 text-white uppercase">
             <Link
               href="#"
-              className="text-sm hover:text-orange-500 transition-colors"
+              className="text-xs hover:text-orange-500 transition-colors"
             >
               Home
             </Link>
             <Link
               href="#"
-              className="text-sm hover:text-orange-500 transition-colors"
+              className="text-xs hover:text-orange-500 transition-colors"
             >
               Service
             </Link>
             <Link
               href="#"
-              className="text-sm hover:text-orange-500 transition-colors"
+              className="text-xs hover:text-orange-500 transition-colors"
             >
               Features
             </Link>
             <Link
               href="#"
-              className="text-sm hover:text-orange-500 transition-colors"
+              className="text-xs hover:text-orange-500 transition-colors"
             >
               Portfolio
             </Link>
             <Link
               href="#"
-              className="text-sm hover:text-orange-500 transition-colors"
+              className="text-xs hover:text-orange-500 transition-colors"
             >
               Blog
             </Link>
             <Link
               href="#"
-              className="text-sm hover:text-orange-500 transition-colors"
+              className="text-xs hover:text-orange-500 transition-colors"
             >
               Contact
             </Link>
