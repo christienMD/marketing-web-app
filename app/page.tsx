@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Navbar from "./Navbar";
 import Hero from "./components/Hero";
+import Services from "./components/Services";
 
 export default function Home() {
   return (
@@ -8,8 +9,10 @@ export default function Home() {
       <Navbar />
       <main className="bg-marketing-black-bg">
         <div className="container mx-auto max-w-7xl">
-
-        <Hero />
+          {/* hero section */}
+          <Hero />
+          {/* service section */}
+          <Services />
         </div>
       </main>
     </>

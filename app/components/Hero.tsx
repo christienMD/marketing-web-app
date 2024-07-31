@@ -2,12 +2,11 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="pt-14 lg:pt-16 xl:pt-20 h-screen">
+    <div className="pt-14 lg:pt-16 xl:pt-20 h-full">
       <div className="flex flex-col gap-20 items-center">
         <h1 className="text-center text-white">
           <span
             className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl uppercase text-marketing-orange-100 font-black mb-4"
-            style={{ textShadow: "0 0 1px #E26E23, 0 0 2px #E26E23" }}
           >
             marketing
           </span>
